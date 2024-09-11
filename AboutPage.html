@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin-right: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1;
+        }
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        aside {
+            background-color: #f9f9f9;
+        }
+        main {
+            background-color: #ffffff;
+            height: 100%;
+            width: 80%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="#">Home</a> | 
+    <a href="#">About</a> | 
+    <a href="#">Services</a> | 
+    <a href="#">Contact</a>
+</nav>
+
+<table >
+    <tr>
+        <td width="25%">
+            <aside>
+                <h2>Sidebar</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+                <h3>Latest News</h3>
+                <p>Check out our latest updates and news from our company.</p>
+            </aside>
+        </td>
+
+        <td width="50%">
+            <main>
+                <h2>About Us</h2>
+                <p>Welcome to [Your Company Name], where innovation meets excellence. Established in [Year], we have consistently provided high-quality products and exceptional services to our clients across various industries.</p>
+                <p>Our mission is to deliver cutting-edge solutions that drive growth and efficiency. Our team of dedicated professionals brings a wealth of experience and expertise, ensuring that we meet and exceed the expectations of our customers.</p>
+                <p>We believe in continuous improvement and strive to stay ahead of industry trends. By fostering a culture of innovation and collaboration, we aim to create lasting value for our clients and stakeholders.</p>
+            </main>
+        </td>
+
+        <td width="25%">
+            <aside>
+                <h2>Additional Info</h2>
+                <p>This section can be used to display ads, promotions, or additional information about your business.</p>
+            </aside>
+        </td>
+    </tr>
+</table>
+
+<footer>
+    © 2024 Your Company Name. All rights reserved.
+</footer>
+
+</body>
+</html>
