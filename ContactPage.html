@@ -3,108 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full-Height Layout</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            text-align: center;
-            margin: 10px 0;
-        }
-        nav a {
-            margin-right: 20px;
-            color: #3498db;
-            text-decoration: none;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        table {
-            width: 100%;
-            height: calc(100vh - 200px); /* Full height minus header and footer */
-            table-layout: fixed;
-            border-collapse: collapse;
-        }
-        td {
-            padding: 15px;
-            vertical-align: top;
-            border: 1px solid #ddd;
-        }
-        aside {
-            background-color: #f9f9f9;
-            height: 100%;
-        }
-        main {
-            background-color: #ffffff;
-            height: 100%;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-            position: relative;
-        }
-    </style>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <a href="HomePage.html" target="_self">Home</a> 
+            <a href="AboutPage.html" target="_self">About</a>  
+            <a href="ServicePage.html" target="_self">Services</a> 
+            <a href="ContactPage.html" target="_self">Contact</a>
+        </nav>
+    </header>
 
-<header>
-    <img src="banner-image.jpg" alt="Banner" width="1500" height="150">
-</header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <h3>Latest News</h3>
+            <p>Check out our latest updates and news from our company.</p>
+        </aside>
 
-<nav>
-    <a href="#">Home</a> | 
-    <a href="#">About</a> | 
-    <a href="#">Services</a> | 
-    <a href="#">Contact</a>
-</nav>
+        <main class="main-content">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you. Please reach out to us through the following methods:</p>
+            <p><strong>Address:</strong> 123 Business Rd, Suite 456, City, State, ZIP Code</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@yourcompany.com">info@yourcompany.com</a></p>
+            <p><strong>Office Hours:</strong> Monday - Friday, 9 AM - 5 PM</p>
 
-<table>
-    <tr>
-        <td width="25%">
-            <aside>
-                <h2>Sidebar</h2>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-                <h3>Latest News</h3>
-                <p>Check out our latest updates and news from our company.</p>
-            </aside>
-        </td>
+            <h2>Contact Form</h2>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
 
-        <td width="50%">
-            <main>
-                <h2>About Us</h2>
-                <p>Welcome to [Your Company Name], where innovation meets excellence. Established in [Year], we have consistently provided high-quality products and exceptional services to our clients across various industries.</p>
-                <p>Our mission is to deliver cutting-edge solutions that drive growth and efficiency. Our team of dedicated professionals brings a wealth of experience and expertise, ensuring that we meet and exceed the expectations of our customers.</p>
-                <p>We believe in continuous improvement and strive to stay ahead of industry trends. By fostering a culture of innovation and collaboration, we aim to create lasting value for our clients and stakeholders.</p>
-            </main>
-        </td>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
 
-        <td width="25%">
-            <aside>
-                <h2>Additional Info</h2>
-                <p>This section can be used to display ads, promotions, or additional information about your business.</p>
-            </aside>
-        </td>
-    </tr>
-</table>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
 
-<footer>
-    © 2024 Your Company Name. All rights reserved.
-</footer>
+                <input type="submit" value="Send">
+            </form>
+        </main>
 
+        <aside class="additional-info">
+            <h2>Additional Info</h2>
+            <p>This section can be used to display ads, promotions, or additional information about your business.</p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </footer>
 </body>
 </html>

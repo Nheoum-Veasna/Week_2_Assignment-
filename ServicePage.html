@@ -3,99 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table Layout</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f2f2f2;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            text-align: center;
-            margin: 10px 0;
-        }
-        nav a {
-            margin-right: 20px;
-            color: #3498db;
-            text-decoration: none;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        td {
-            padding: 15px;
-            border: 1px solid #ddd;
-            vertical-align: top;
-        }
-        aside {
-            background-color: #f9f9f9;
-        }
-        main {
-            background-color: #ffffff;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #2c3e50;
-            color: white;
-        }
-    </style>
+    <title>Company Services</title>
+    <link rel="stylesheet" href="service.css">
 </head>
 <body>
+    <header class="header">
+        <nav>
+            <a href="HomePage.html" target="_self">Home</a> 
+            <a href="AboutPage.html" target="_self">About</a>
+            <a href="ServicePage.html" target="_self">Services</a>  
+            <a href="ContactPage.html" target="_self">Contact</a>
+        </nav>
+    </header>
 
-<header>
-    <img src="banner-image.jpg" alt="Banner" width="1500" height="150">
-</header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+            <h3>Latest News</h3>
+            <p>Check out our latest updates and news from our company.</p>
+        </aside>
 
-<nav>
-    <a href="#">Home</a> | 
-    <a href="#">About</a> | 
-    <a href="#">Services</a> | 
-    <a href="#">Contact</a>
-</nav>
+        <main class="main-content">
+            <h1>Our Services</h1>
+            <ul>
+                <li><strong>Consulting Services:</strong> Our consulting services are designed to help businesses optimize operations and achieve their goals.</li>
+                <li><strong>Custom Software Development:</strong> We specialize in developing software solutions tailored to your business needs.</li>
+                <li><strong>Project Management:</strong> We ensure projects are delivered on time and within budget.</li>
+                <li><strong>Training and Support:</strong> We provide comprehensive support to help your team use our solutions effectively.</li>
+            </ul>
+        </main>
 
-<table>
-    <tr>
-        <td width="25%">
-            <aside>
-                <h2>Sidebar</h2>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                </ul>
-                <h3>Latest News</h3>
-                <p>Check out our latest updates and news from our company.</p>
-            </aside>
-        </td>
+        <aside class="additional-info">
+            <h2>Additional Info</h2>
+            <p>This section can be used to display ads, promotions, or additional information about your business.</p>
+        </aside>
+    </div>
 
-        <td width="50%">
-            <main>
-                <h2>About Us</h2>
-                <p>Welcome to [Your Company Name], where innovation meets excellence. Established in [Year], we have consistently provided high-quality products and exceptional services to our clients across various industries.</p>
-                <p>Our mission is to deliver cutting-edge solutions that drive growth and efficiency. Our team of dedicated professionals brings a wealth of experience and expertise, ensuring that we meet and exceed the expectations of our customers.</p>
-                <p>We believe in continuous improvement and strive to stay ahead of industry trends. By fostering a culture of innovation and collaboration, we aim to create lasting value for our clients and stakeholders.</p>
-            </main>
-        </td>
-
-        <td width="25%">
-            <aside>
-                <h2>Additional Info</h2>
-                <p>This section can be used to display ads, promotions, or additional information about your business.</p>
-            </aside>
-        </td>
-    </tr>
-</table>
-
-<footer>
-    © 2024 Your Company Name. All rights reserved.
-</footer>
-
+    <footer class="footer">
+        &copy; 2024 Your Company Name. All rights reserved.
+    </footer>
 </body>
 </html>
